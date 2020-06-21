@@ -24,3 +24,9 @@ let point: { x: number; y: number } = { x: 10, y: 20 };
 const logNumber: (i: number) => void = (i: number) => {
   console.log(i);
 };
+
+const json = '{"x":10,"y":20"}';
+const result = JSON.parse(json);
+
+let numbers = [-10, -1, 12];
+let numberAboveZero: boolean | number = false;
