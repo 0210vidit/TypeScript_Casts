@@ -1,13 +1,17 @@
 interface Vehicle {
   name: string;
-  year: number;
+  year: Date;
   broken: boolean;
+  summary(): string;
 }
 
 const oldCivic = {
   name: 'civiv',
-  year: 2000,
+  year: new Date(),
   broken: true,
+  summary(): string {
+    return `Name is ${this.name}`;
+  },
 };
 
 //Bad way!
