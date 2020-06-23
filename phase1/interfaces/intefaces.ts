@@ -42,5 +42,3 @@ const printVehicle = (vehicle: Vehicle): void => {
   // console.log(`Broken : ${vehicle.broken}`);
   console.log(vehicle.summary());
 };
-
-printVehicle(oldCivic);
