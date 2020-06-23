@@ -6,11 +6,21 @@ interface Vehicle {
 }
 
 const oldCivic = {
-  name: 'civiv',
+  name: 'civic',
   year: new Date(),
   broken: true,
   summary(): string {
     return `Name is ${this.name}`;
+  },
+  owner: 'Shah',
+};
+
+const drinks = {
+  color: 'brown',
+  carbonated: true,
+  sugar: 40,
+  summary(): string {
+    return `My drink has sugar ${this.sugar}`;
   },
 };
 
@@ -27,9 +37,10 @@ const oldCivic = {
 // };
 
 const printVehicle = (vehicle: Vehicle): void => {
-  console.log(`Name : ${vehicle.name}`);
-  console.log(`Year : ${vehicle.year}`);
-  console.log(`Broken : ${vehicle.broken}`);
+  // console.log(`Name : ${vehicle.name}`);
+  // console.log(`Year : ${vehicle.year}`);
+  // console.log(`Broken : ${vehicle.broken}`);
+  console.log(vehicle.summary());
 };
 
 printVehicle(oldCivic);
